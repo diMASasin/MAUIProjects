@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiApp3="using:MauiApp3"
+             x:Class="MauiApp3.MainPage"
+             MinimumHeightRequest="400"
+             MinimumWidthRequest="400">
+
+    <Grid ColumnDefinitions="*, 4*, *, *, 4*, *, *, *, 4*, *, *, 4*, *, *, *, 4*, *, *, 4*, *" ColumnSpacing="10" 
+          RowDefinitions="*, 5*, *, 5*, *" RowSpacing="10" WidthRequest="-1" HeightRequest="300"
+          x:Name="myGrid" Margin="30">
+
+        <!--1nd digit-->
+        <BoxView Grid.Column="1" Color="DarkOrange" x:Name="Segment000"/>
+
+        <BoxView Grid.Column="0" Grid.Row="1" Color="DarkOrange" x:Name="Segment010"/>
+        <BoxView Grid.Column="2" Grid.Row="1" Color="DarkOrange" x:Name="Segment011"/>
+
+        <BoxView Grid.Column="1" Grid.Row="2" Color="DarkOrange" x:Name="Segment020"/>
+
+        <BoxView Grid.Column="0" Grid.Row="3" Color="DarkOrange" x:Name="Segment030"/>
+        <BoxView Grid.Column="2" Grid.Row="3" Color="DarkOrange" x:Name="Segment031"/>
+
+        <BoxView Grid.Column="1" Grid.Row="4" Color="DarkOrange" x:Name="Segment040"/>
+
+        <!--2nd digit-->
+        <BoxView Grid.Column="4" Color="DarkOrange" x:Name="Segment100"/>
+
+        <BoxView Grid.Column="3" Grid.Row="1" Color="DarkOrange" x:Name="Segment110"/>
+        <BoxView Grid.Column="5" Grid.Row="1" Color="DarkOrange" x:Name="Segment111"/>
+
+        <BoxView Grid.Column="4" Grid.Row="2" Color="DarkOrange" x:Name="Segment120"/>
+
+        <BoxView Grid.Column="3" Grid.Row="3" Color="DarkOrange" x:Name="Segment130"/>
+        <BoxView Grid.Column="5" Grid.Row="3" Color="DarkOrange" x:Name="Segment131"/>
+
+        <BoxView Grid.Column="4" Grid.Row="4" Color="DarkOrange" x:Name="Segment140"/>
+
+
+        <BoxView Grid.Column="6" Grid.Row="1" Color="DarkOrange" x:Name="SegmentDot1" HeightRequest="24"/>
+        <BoxView Grid.Column="6" Grid.Row="3" Color="DarkOrange" x:Name="SegmentDot2" HeightRequest="24"/>
+        
+        <!--3rd digit-->
+        <BoxView Grid.Column="8" Color="DarkOrange" x:Name="Segment200"/>
+
+        <BoxView Grid.Column="7" Grid.Row="1" Color="DarkOrange" x:Name="Segment210"/>
+        <BoxView Grid.Column="9" Grid.Row="1" Color="DarkOrange" x:Name="Segment211"/>
+
+        <BoxView Grid.Column="8" Grid.Row="2" Color="DarkOrange" x:Name="Segment220"/>
+
+        <BoxView Grid.Column="7" Grid.Row="3" Color="DarkOrange" x:Name="Segment230"/>
+        <BoxView Grid.Column="9" Grid.Row="3" Color="DarkOrange" x:Name="Segment231"/>
+
+        <BoxView Grid.Column="8" Grid.Row="4" Color="DarkOrange" x:Name="Segment240"/>
+
+        <!--4th digit-->
+        <BoxView Grid.Column="11" Color="DarkOrange" x:Name="Segment300"/>
+
+        <BoxView Grid.Column="10" Grid.Row="1" Color="DarkOrange" x:Name="Segment310"/>
+        <BoxView Grid.Column="12" Grid.Row="1" Color="DarkOrange" x:Name="Segment311"/>
+                                                                              
+        <BoxView Grid.Column="11" Grid.Row="2" Color="DarkOrange" x:Name="Segment320"/>
+                                                                              
+        <BoxView Grid.Column="10" Grid.Row="3" Color="DarkOrange" x:Name="Segment330"/>
+        <BoxView Grid.Column="12" Grid.Row="3" Color="DarkOrange" x:Name="Segment331"/>
+                                                                              
+        <BoxView Grid.Column="11" Grid.Row="4" Color="DarkOrange" x:Name="Segment340"/>
+
+        <BoxView Grid.Column="13" Grid.Row="1" Color="DarkOrange" x:Name="SegmentDot3" HeightRequest="24"/>
+        <BoxView Grid.Column="13" Grid.Row="3" Color="DarkOrange" x:Name="SegmentDot4" HeightRequest="24"/>
+
+        <!--5th digit-->
+        <BoxView Grid.Column="15" Color="DarkOrange" x:Name="Segment400"/>
+
+        <BoxView Grid.Column="14" Grid.Row="1" Color="DarkOrange" x:Name="Segment410"/>
+        <BoxView Grid.Column="16" Grid.Row="1" Color="DarkOrange" x:Name="Segment411"/>
+                                                                              
+        <BoxView Grid.Column="15" Grid.Row="2" Color="DarkOrange" x:Name="Segment420"/>
+                                                                              
+        <BoxView Grid.Column="14" Grid.Row="3" Color="DarkOrange" x:Name="Segment430"/>
+        <BoxView Grid.Column="16" Grid.Row="3" Color="DarkOrange" x:Name="Segment431"/>
+                                                                              
+        <BoxView Grid.Column="15" Grid.Row="4" Color="DarkOrange" x:Name="Segment440"/>
+
+        <!--6th digit-->
+        <BoxView Grid.Column="18" Color="DarkOrange" x:Name="Segment500"/>
+
+        <BoxView Grid.Column="17" Grid.Row="1" Color="DarkOrange" x:Name="Segment510"/>
+        <BoxView Grid.Column="19" Grid.Row="1" Color="DarkOrange" x:Name="Segment511"/>
+                                                                              
+        <BoxView Grid.Column="18" Grid.Row="2" Color="DarkOrange" x:Name="Segment520"/>
+                                                                              
+        <BoxView Grid.Column="17" Grid.Row="3" Color="DarkOrange" x:Name="Segment530"/>
+        <BoxView Grid.Column="19" Grid.Row="3" Color="DarkOrange" x:Name="Segment531"/>
+                                                                              
+        <BoxView Grid.Column="18" Grid.Row="4" Color="DarkOrange" x:Name="Segment540"/>
+    </Grid>
+
+</ContentPage>

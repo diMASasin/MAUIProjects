@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:currencyMegaConverter="clr-namespace:CurrencyMegaConverter"
+             x:Class="CurrencyMegaConverter.MainPage"
+             x:DataType="currencyMegaConverter:MainViewModel">
+
+    <ScrollView>
+        <Grid ColumnDefinitions="*, *, *" RowDefinitions="100, 50, Auto">
+            <DatePicker Date="{Binding ExchangeRates.Date}" Format="dd/mm/yyyy" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"></DatePicker>
+
+            <VerticalStackLayout Padding="10" HorizontalOptions="Center" Grid.Row="2" Spacing="10">
+                <Picker WidthRequest="300" HeightRequest="40" ItemsSource="{Binding CurrencyNames}" SelectedItem="{Binding Valute1.SelectedItem}" 
+                        SelectedIndex="{Binding Valute1.SelectedIndex}"/>
+                <Entry WidthRequest="300" Text="{Binding Valute1.EntryText}"></Entry>
+            </VerticalStackLayout>
+
+        <Label Text="{Binding ExchangeRates.DateText}" Grid.Column="1" Grid.Row="1" HorizontalOptions="Center"></Label>
+
+            <VerticalStackLayout Padding="10" HorizontalOptions="Center" Grid.Column="2" Grid.Row="2" Spacing="10">
+                <Picker WidthRequest="300" HeightRequest="40" ItemsSource="{Binding CurrencyNames}" SelectedItem="{Binding Valute2.SelectedItem}"
+                        SelectedIndex="{Binding Valute2.SelectedIndex}"/>
+                <Entry WidthRequest="300" Text="{Binding Valute2.EntryText}"></Entry>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
